@@ -8,6 +8,13 @@ exact frequency / level values from linked cursors. Play/pause with a moving pla
 
 ## Install & run
 
+### Windows executable
+
+Download and run the [standalone Windows executable](builds/SoundAnalyzer.exe). Python and
+pip are not required.
+
+### Run from Python
+
 Python 3.10+ is recommended.
 
 ```bash
@@ -17,7 +24,7 @@ python sound_analyzer.py recording.wav   # open a file directly
 python sound_analyzer.py --demo          # synthetic engine run-up to try it out
 ```
 
-Windows and macOS: the pip wheels include everything you need.
+For the Python install, Windows and macOS pip wheels include everything you need.
 Linux: you may also need PortAudio for playback (`sudo apt install libportaudio2`).
 
 Supported formats: WAV, FLAC, OGG/Opus, MP3, AIFF, W64/RF64, CAF (via libsndfile).
